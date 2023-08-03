@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeVerse - Contact</title>
+    <link rel="stylesheet" href="contact_style.css" />
+    <link rel="stylesheet" href="media_contact.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="nav-branding">CodeVerse</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="courses.html">Courses</a></li>
+          <li class="nav-item-active"><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="details">
+        <h3>Contact Us</h3>
+        <h5>We Are Always Here To Help Out :)</h5>
+
+        <ul>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="Name"
+              placeholder="Name"
+              id="iName"
+              autocomplete="off"
+            />
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="iMail"
+              autocomplete="off"
+             
+            />
+          </li>
+
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" name="phone" placeholder="Phone" />
+          </li>
+
+          <li>
+            <input
+              type="text"
+              name="feed"
+              placeholder="Type Your Message"
+              id="iMsg"
+              required
+            />
+          </li>
+        </ul>
+
+        <button class="send-btn">Send</button>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"></span>
+        <i class="fa-regular fa-circle-check"></i>
+        <p>Thanks For Your Feedback</p>
+      </div>
+    </div>
+
+    <div id="inv" class="invModal">
+      <div class="inv-modal-content">
+        <span class="close"></span>
+        <i class="fa-regular fa-times-circle"></i>
+        <p>Invalid Email</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="ft-slogan">
+        <h1>{CodeVerse}</h1>
+        <h3>all copyrights reserved &copy;<span id="year"></span></h3>
+      </div>
+      <div class="ft-social">
+        <h4>About Us</h4>
+        <p>
+          CodeVerse Is A Learning Platform That Provides Several Study Plans
+          Explained In Detail To Help You Enhance Your Skills, Expand Your
+          Knowledge and Pass Your Coding Interview.
+        </p>
+
+        <ul class="social">
+          <li>
+            <a href="#"><i class="fa-brands fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
