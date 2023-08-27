@@ -51,6 +51,7 @@
 
   .main {
     height: 30vh;
+    
   }
 
   .main h2 {
@@ -60,6 +61,7 @@
   .main h3 {
     font-size: 2vh;
     margin-bottom: 5%;
+    
   }
 
   .home {
