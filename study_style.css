@@ -152,10 +152,16 @@ li {
 
 .main h3 {
   color: #f9c360;
-  font-size: 8vh;
   padding: 15px;
+  font-size: 4vw;
   font-family: "Courier New", Courier, monospace;
 }
+
+.main h3:first-of-type
+{
+  font-size: 6vw;
+}
+
 
 .main p {
   width: 70%;
@@ -175,7 +181,7 @@ li {
 
 .courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
   width: 100%;
   padding: 15px;
   justify-content: center;
@@ -192,19 +198,13 @@ li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 20%;
   transition: 0.8s ease-in-out;
+  height: 440px;
+  
 }
 
 
-@media (width: 1024px)
-{
-.courses .card:last-of-type
-{
-  justify-self: center;
-  grid-column-start: span 2;
-}
-}
 
 .courses .card:hover {
   transform: scale(110%);
@@ -217,6 +217,18 @@ li {
   aspect-ratio: 1/1;
   width: 60%;
 }
+@media (max-width: 1280px)
+{
+
+.courses .card:last-of-type
+{
+  justify-self: center;
+  align-self: center;
+  grid-column: span 2;
+}
+
+}
+
 
 .courses .card .desc {
   padding: 10px;
