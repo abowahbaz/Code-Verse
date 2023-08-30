@@ -175,9 +175,11 @@ li {
 
 .courses {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
   width: 100%;
   padding: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .courses .card {
@@ -192,6 +194,16 @@ li {
   padding: 5px;
   margin-bottom: 20px;
   transition: 0.8s ease-in-out;
+}
+
+
+@media (width: 1024px)
+{
+.courses .card:last-of-type
+{
+  justify-self: center;
+  grid-column-start: span 2;
+}
 }
 
 .courses .card:hover {
