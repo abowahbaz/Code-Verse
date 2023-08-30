@@ -84,7 +84,7 @@ li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.hamburger {
+.resp-menu {
   display: none;
   cursor: pointer;
 }
@@ -97,6 +97,44 @@ li {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242524;
+  z-index: 1000;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #f9c360;
+  border-top-color: #f3f3f3;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+.loader--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
 
 .main {
@@ -124,6 +162,88 @@ li {
   font-size: 18px;
   color: #f3f3f3;
   text-align: center;
+}
+
+.home {
+  padding: 10px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  padding: 15px;
+}
+
+.courses .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  background-color: #242524;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: 0.8s ease-in-out;
+}
+
+.courses .card:hover {
+  transform: scale(110%);
+}
+
+.courses .card img {
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  width: 60%;
+}
+
+.courses .card .desc {
+  padding: 10px;
+  object-fit: contain;
+  opacity: 0.7;
+  color: #f3f3f3;
+  text-transform: capitalize;
+}
+
+.courses .card .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f3f3f3;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.courses .card .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.courses .card .box .btn {
+  font-size: 20px;
+  color: #242524;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: #f9c360;
+  padding: 8px 20px;
+
+  border-radius: 5px;
+}
+
+.courses .card .box .btn:hover {
+  color: #252525;
+  background-color: #ce942a;
 }
 
 footer {

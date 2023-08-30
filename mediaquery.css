@@ -1,17 +1,17 @@
 @media (max-width: 768px) {
-  .hamburger {
+  .resp-menu {
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  .resp-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .bar:nth-child(1) {
+  .resp-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(3) {
+  .resp-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -51,17 +51,17 @@
 
   .main {
     height: 30vh;
-    
   }
 
   .main h2 {
-    font-size: 5vh;
+    font-size: 4vh;
+    padding: 5% 0 5% 0;
   }
 
   .main h3 {
     font-size: 2vh;
+    width: 80%;
     margin-bottom: 5%;
-    
   }
 
   .home {

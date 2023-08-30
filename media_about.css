@@ -1,17 +1,17 @@
 @media (max-width: 768px) {
-  .hamburger {
+  .resp-menu {
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  .resp-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .bar:nth-child(1) {
+  .resp-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(3) {
+  .resp-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -63,7 +63,7 @@
   }
 
   .about-heading {
-    font-size: 25px;
+    font-size: 7vw;
 
     display: inline-block;
   }
@@ -79,8 +79,7 @@
   }
 
   .about-desc p {
-    font-size: 10px;
-    text-overflow: clip;
+    font-size: 3vw;
   }
 
   footer {
@@ -134,6 +133,7 @@
   #email {
     color: #f9c360;
     cursor: pointer;
+    margin-left: 5%;
   }
 
   .ft-slogan h3 {

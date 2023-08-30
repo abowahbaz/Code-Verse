@@ -1,17 +1,17 @@
 @media (max-width: 1000px) {
-  .hamburger {
+  .resp-menu {
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  .resp-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .bar:nth-child(1) {
+  .resp-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(3) {
+  .resp-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -52,10 +52,12 @@
   .main {
     width: 100%;
     z-index: 999;
+    padding: 5%;
   }
 
   .main h3 {
-    font-size: 100%;
+    font-size: 3.5vh;
+    width: 100%;
   }
 
   .main iframe {
@@ -66,6 +68,21 @@
   .main p {
     width: 100%;
     font-size: 72%;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courses .card {
+    transform: scale(80%);
+  }
+
+  .courses .card:hover {
+    transform: scale(85%);
   }
 
   footer {
