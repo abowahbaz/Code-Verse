@@ -13,5 +13,5 @@ Knowledge and Pass Your Coding Interview.
 
 # Inspiration 💡:
 
-CodeVerse as a project is meant to be a warehouse of all awesome free courses about technology
-Color palette is inspired from LeetCode and CodeChef.
+!CodeVerse as a project is meant to be a warehouse of all awesome free courses about technology
+!Color palette is inspired from LeetCode and CodeChef.
